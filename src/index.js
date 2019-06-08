@@ -32,7 +32,7 @@ if(!Quill) {
 }
 Quill.register('formats/horizontal', HorizontalRule)
 
-class MarkdownShortcuts {
+export default class MarkdownShortcuts {
   constructor (quill, options) {
     this.quill = quill
     this.options = options
@@ -291,5 +291,3 @@ class MarkdownShortcuts {
     }
   }
 }
-
-module.exports = MarkdownShortcuts
