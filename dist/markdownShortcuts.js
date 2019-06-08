@@ -430,7 +430,7 @@ module.exports = MarkdownShortcuts;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -439,18 +439,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+if (!Quill) {
+	var Quill = window.Quill;
+}
 var BlockEmbed = Quill.import('blots/block/embed');
 
 var HorizontalRule = function (_BlockEmbed) {
-  _inherits(HorizontalRule, _BlockEmbed);
+	_inherits(HorizontalRule, _BlockEmbed);
 
-  function HorizontalRule() {
-    _classCallCheck(this, HorizontalRule);
+	function HorizontalRule() {
+		_classCallCheck(this, HorizontalRule);
 
-    return _possibleConstructorReturn(this, (HorizontalRule.__proto__ || Object.getPrototypeOf(HorizontalRule)).apply(this, arguments));
-  }
+		return _possibleConstructorReturn(this, (HorizontalRule.__proto__ || Object.getPrototypeOf(HorizontalRule)).apply(this, arguments));
+	}
 
-  return HorizontalRule;
+	return HorizontalRule;
 }(BlockEmbed);
 
 HorizontalRule.blotName = 'hr';
