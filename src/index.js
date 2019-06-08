@@ -27,6 +27,9 @@
  //
 
 import HorizontalRule from './formats/hr'
+if(!Quill) {
+ var Quill = window.Quill
+}
 Quill.register('formats/horizontal', HorizontalRule)
 
 class MarkdownShortcuts {
